@@ -8,7 +8,7 @@ services:
       - "8761:8761"
 
   todo-app:
-    build: ./bd/demo
+    build: ./bd-api/demo
     container_name: todo-app
     ports:
       - "8081:8080"
@@ -17,7 +17,7 @@ services:
 
 
   todo-app-2:
-    build: ./bd/demo
+    build: ./bd-api/demo
     container_name: todo-app-2
     ports:
       - "5050:8080"
